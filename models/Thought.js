@@ -1,4 +1,9 @@
-const { Schema, model } = require('mongoose');
+//@ts-check
+const { Schema, model , Types} = require('mongoose');
+
+function dateFormat(date) {
+  return date.toLocaleString();
+}
 
 const reactionSchema = new Schema(
   {
